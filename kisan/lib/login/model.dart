@@ -27,6 +27,14 @@ class User {
 class LoginStatus {
   static bool _isLogin;
 
+  static String _otp;
+
+  static String get otp => _otp;
+
+  static set otp(String value) {
+    _otp = value;
+  }
+
   static bool get isLogin => _isLogin;
 
   static set isLogin(bool value) {
